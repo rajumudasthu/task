@@ -21,6 +21,10 @@ body {
   .task-list {
     list-style: none;
     padding: 0;
+    width:640px;
+    text-align:center;
+    margin-left:245px;
+    background-color:wheat;
   }
   
   .task-item {
@@ -54,4 +58,13 @@ body {
   
   .mon{
     background-color:#8b8c8f;
+  }
+  .days{
+    text-align:center;
+    
+  }
+.btn{
+  width:85px;
+  height:40px;
+  row-gap:10px;
   }
