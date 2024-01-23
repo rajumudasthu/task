@@ -3,68 +3,95 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f2f2f2;
-  }
-  
-  .task-container {
+}
+
+.task-container {
     max-width: 600px;
     margin: 20px auto;
     background-color: #fff;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius:8px;
-  }
-  
-  .task-form {
+    border-radius: 8px;
+}
+
+.task-form {
     margin-bottom: 20px;
-  }
-  
-  .task-list {
+}
+
+.task-list {
     list-style: none;
     padding: 0;
-    width:640px;
-    text-align:center;
-    margin-left:245px;
-    background-color:wheat;
-  }
-  
-  .task-item {
-    background-color: #e6e6e6;
+    width: 640px;
+    text-align: center;
+    margin-left: 210px;
+    margin-right: auto;
+    width: 70%;
+
+    justify-content: center;
+}
+
+.task-item {
     margin: 5px 0;
     padding: 10px;
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .task-item button {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.task-item button {
     margin-left: 10px;
-  }
+}
 
-  .description{
-    margin-top:30px;
-  }
-  .textInput{
-    width:80%;
-    margin-top:10px;
-  }
+.description {
+    margin-top: 30px;
+}
 
-  .titleClass{
-    width:40%;
-  }
-  .dateClass{
-    margin-left:230px;
-  }
-  
-  .mon{
-    background-color:#8b8c8f;
-  }
-  .days{
-    text-align:center;
-    
-  }
-.btn{
-  width:85px;
-  height:40px;
-  row-gap:10px;
-  }
+.textInput {
+    width: 80%;
+    margin-top: 10px;
+}
+
+.titleClass {
+    width: 40%;
+}
+
+.dateClass {
+    margin-left: 230px;
+}
+
+.mon {
+    background-color: #8b8c8f;
+}
+
+.days {
+    text-align: center;
+}
+
+.btn {
+    width: 85px;
+    height: 40px;
+    row-gap: 10px;
+}
+
+.btn.clicked {
+    background-color: lightblue;
+    /* Change the color as desired */
+}
+
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .task-item {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .task-item {
+        width: 100%;
+    }
+}
