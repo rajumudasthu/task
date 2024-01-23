@@ -1,48 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css.css" />
-    <title>Task Manager</title>
-  </head>
-  <body>
-    <div class="task-container">
-      <div class="task-form">
-        <!-- <label for="title">Title:</label> -->
-        <input
-          type="text"
-          id="title"
-          placeholder="Title"
-          required
-          class="titleClass"
-        />
-        <!-- <label for="date">Date:</label> -->
-        <input type="date" id="date" min="" required class="dateClass" />
-        <br />
-        <!-- <label for="description">Description:</label> -->
-        <!-- <textarea id="description" class="description"></textarea> -->
-        <input
-          type="text"
-          id="description"
-          placeholder="Description"
-          class="textInput"
-        />
-        <button onclick="addTask()">SAVE</button>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css.css" />
+  <title>Task Manager</title>
+</head>
+<body>
+  <div class="task-container">
+    <div class="task-form">
+      <input type="text" id="title" placeholder="Title" required class="titleClass" />
+      <input type="date" id="date" min="" required class="dateClass" />
+      <br />
+      <input type="text" id="description" placeholder="Description" class="textInput" />
+      <button onclick="addTask()">SAVE</button>
     </div>
-    <div class="days">
-      <button class="btn">SUN</button>
-      <button class="btn">MON</button>
-      <button class="btn">TUE</button>
-      <button class="btn">WEN</button>
-      <button class="btn">THU</button>
-      <button class="btn">FRI</button>
-      <button class="btn">SAT</button>
-    </div>
+  </div>
+  <div class="days">
+    <button class="btn" onclick="showTasks('SUN')">SUN</button>
+    <button class="btn" onclick="showTasks('MON')">MON</button>
+    <button class="btn" onclick="showTasks('TUE')">TUE</button>
+    <button class="btn" onclick="showTasks('WED')">WED</button>
+    <button class="btn" onclick="showTasks('THU')">THU</button>
+    <button class="btn" onclick="showTasks('FRI')">FRI</button>
+    <button class="btn" onclick="showTasks('SAT')">SAT</button>
+  </div>
 
-    <div class="task-list" id="taskList"></div>
+  <div class="task-list" id="taskList"></div>
 
-    <script src="js.js"></script>
-  </body>
+  <script src="js.js"></script>
+</body>
 </html>
