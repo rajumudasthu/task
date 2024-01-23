@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css.css" />
-  <title>Task Manager</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css.css" />
+    <title>Task Manager</title>
 </head>
+
 <body>
-  <div class="task-container">
-    <div class="task-form">
-      <input type="text" id="title" placeholder="Title" required class="titleClass" />
-      <input type="date" id="date" min="" required class="dateClass" />
-      <br />
-      <input type="text" id="description" placeholder="Description" class="textInput" />
-      <button onclick="addTask()">SAVE</button>
+    <div class="task-container">
+        <div class="task-form">
+            <input type="text" id="title" placeholder="Title" required class="titleClass" />
+            <input type="date" id="date" min="" required class="dateClass" />
+            <br />
+            <input type="text" id="description" placeholder="Description" class="textInput" />
+            <button onclick="addTask()">SAVE</button>
+        </div>
     </div>
-  </div>
-  <div class="days">
-    <button class="btn" onclick="showTasks('SUN')">SUN</button>
-    <button class="btn" onclick="showTasks('MON')">MON</button>
-    <button class="btn" onclick="showTasks('TUE')">TUE</button>
-    <button class="btn" onclick="showTasks('WED')">WED</button>
-    <button class="btn" onclick="showTasks('THU')">THU</button>
-    <button class="btn" onclick="showTasks('FRI')">FRI</button>
-    <button class="btn" onclick="showTasks('SAT')">SAT</button>
-  </div>
+    <div class="days">
+        <button class="btn" data-day="SUN" onclick="showTasks('SUN')">SUN</button>
+        <button class="btn" data-day="MON" onclick="showTasks('MON')">MON</button>
+        <button class="btn" data-day="TUE" onclick="showTasks('TUE')">TUE</button>
+        <button class="btn" data-day="WED" onclick="showTasks('WED')">WED</button>
+        <button class="btn" data-day="THU" onclick="showTasks('THU')">THU</button>
+        <button class="btn" data-day="FRI" onclick="showTasks('FRI')">FRI</button>
+        <button class="btn" data-day="SAT" onclick="showTasks('SAT')">SAT</button>
+    </div>
 
-  <div class="task-list" id="taskList"></div>
+    <div class="task-list" id="taskList"></div>
 
-  <script src="js.js"></script>
+    <script src="js.js"></script>
 </body>
+
 </html>
